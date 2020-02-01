@@ -14,6 +14,7 @@
 5. Build library:
 
       cd lib
+      
       make
 
 6. Install opencv-python:
