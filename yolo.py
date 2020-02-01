@@ -45,7 +45,7 @@ if __name__ == '__main__':
     N = 100
     for _ in range(N): model.detect(data, width, height, batchSize)
     t = time.time() - t
-    print('Mean inference time (ms):', 1000*t/N/4)
+    print('Mean inference time (ms):', 1000*t/N/batchSize)
 
 
 
