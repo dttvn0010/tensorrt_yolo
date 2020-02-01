@@ -35,7 +35,7 @@ if __name__ == '__main__':
     img = cv2.imread('images/test.jpg')
     height, width, _ = img.shape
     img2 = preprocess.preprocess(img, 448, 448)
-    imgList = [img2] * 4
+    imgList = [img2] * batchSize
     blob = preprocess.packImages(imgList, 448, 448)
     data = blob.ctypes.data_as(POINTER(c_float))
     bboxesList = model.detect(data, width, height, batchSize)
