@@ -1,4 +1,4 @@
-##Original source : https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps/tree/restructure/yolo
+## Original source : https://github.com/NVIDIA-AI-IOT/deepstream_reference_apps/tree/restructure/yolo
 
 1. Install cuda-10:
       https://developer.nvidia.com/cuda-10.0-download-archive
@@ -8,10 +8,10 @@
 
 3. Add /usr/local/cuda/bin/ to PATH and /usr/local/cuda/lib64 to LD_LIBRARY_PATH in .profile (or .bash_login, .bash_rc, ...)
 
-4 Install tensorrt-7:
+4. Install tensorrt-7:
       https://docs.nvidia.com/deeplearning/sdk/tensorrt-archived/tensorrt-700/tensorrt-install-guide/index.html
 
-5.Build library:
+5. Build library:
       cd lib
       make
 
