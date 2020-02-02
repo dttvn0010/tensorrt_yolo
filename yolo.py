@@ -9,7 +9,6 @@ lib.detect.restype = c_void_p
 lib.free_mem.argtypes = c_void_p,
 lib.free_mem.restype = None
 
-
 class Model:
     def detect(self, data , imgW, imgH, batchSize):
         ptr = lib.detect(data, imgW, imgH, batchSize)
@@ -46,6 +45,3 @@ if __name__ == '__main__':
     for _ in range(N): model.detect(data, width, height, batchSize)
     t = time.time() - t
     print('Mean inference time (ms):', 1000*t/N/batchSize)
-
-
-
